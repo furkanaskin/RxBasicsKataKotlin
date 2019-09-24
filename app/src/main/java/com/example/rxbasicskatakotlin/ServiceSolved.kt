@@ -142,7 +142,7 @@ internal class ServiceSolved : Service {
     }
 
     override fun returnStringWith4SecTimeout(): Observable<String> {
-        return Observable.just("1 Sec delay")
+        return Observable.just("4 Sec Timeout")
             .delay(4L, TimeUnit.SECONDS)
     }
 }
